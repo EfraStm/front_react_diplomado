@@ -1,8 +1,8 @@
 {
-  "name": "desarrollo-frontend-react",
+  "name": "front_react_diplomado",
   "version": "0.1.0",
   "private": true,
-  "homepage": "https://EfraStm.github.io/desarrollo-frontend-react",
+  "homepage": "https://EfraStm.github.io/front_react_diplomado",
   "dependencies": {
     "@testing-library/jest-dom": "^5.17.0",
     "@testing-library/react": "^13.4.0",
