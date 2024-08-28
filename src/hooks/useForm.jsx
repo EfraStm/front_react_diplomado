@@ -1,19 +1,21 @@
-import { useState } from "react";
+import { useState } from 'react';
 
 const useForm = (initialValues) => {
-    const [values, setValue] = useState(initialValues);
+    const [values, setValues] = useState(initialValues);
 
     const handleChange = (event) => {
         const { name, value } = event.target;
-        setValue(
-            {
-                ...values,
-                [name]: value,
-            }
-        );
-    }
+        setValues(prevValues => ({
+            ...prevValues,
+            [name]: value
+        }));
+    };
 
-    return [values, handleChange];
-}
+    const resetForm = () => {
+        setValues(initialValues);
+    };
+
+    return [values, handleChange, resetForm];
+};
 
 export default useForm;
