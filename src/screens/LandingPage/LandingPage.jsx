@@ -29,7 +29,7 @@ const LandingPage = () => {
                 <p>Para profundizar en los temas cubiertos, consulta los siguientes recursos</p>
                 </div>
                 <footer className="ft">
-                    <p>&copy; 2024 Módulo 7. USIP</p>
+                    <p>&copy; 2024 Módulo 7. USIP JUAN EFRAIN PAUCARA CASAS</p>
                 </footer>
             </div>
         </>
