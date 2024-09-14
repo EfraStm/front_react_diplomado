@@ -3,9 +3,11 @@
 <head>
     <meta http-equiv="refresh" content="0; url=/front_react_diplomado/" />
     <script>
-        // Redirigir al index.html pero manteniendo la URL original
+        // Asegúrate de que solo se aplique el basename si no está ya en la URL
         var pathname = window.location.pathname;
-        window.location.replace("/front_react_diplomado" + pathname);
+        if (!pathname.startsWith("/front_react_diplomado")) {
+            window.location.replace("/front_react_diplomado" + pathname);
+        }
     </script>
 </head>
 <body>
