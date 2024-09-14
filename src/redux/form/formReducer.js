@@ -1,4 +1,4 @@
-import { SET_FORM_DATA, CLEAR_PASSWORD_ERROR, CLEAR_FORM_DATA } from './formTypes';
+import { SET_FORM_DATA, CLEAR_PASSWORD_ERROR, CLEAR_FORM_DATA ,PASSWORD_DATA} from './formTypes';
 
 const initialState = {
     formData: {
@@ -13,7 +13,7 @@ const formReducer = (state = initialState, action) => {
     switch (action.type) {
         case SET_FORM_DATA: {
             const { password, ...rest } = action.payload;
-            if (password && password !== 'mod7ReactUSIP') {
+            if (password && password !== PASSWORD_DATA) {
                 // Ojo si la contraseña es incorrecta, no se actualiza el formData y se establece un mensaje de error
                 return {
                     ...state,

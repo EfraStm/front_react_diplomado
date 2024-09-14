@@ -6,6 +6,7 @@ import LoginForm from "../screens/Forms/LoginForm";
 import App from "../App";
 import LandingPage from "../screens/LandingPage/LandingPage";
 const basename = process.env.NODE_ENV === 'production' ? '/front_react_diplomado' : '/';
+import Dictionary from '../screens/Dictionary/Dictionary';
 
 const routes = createBrowserRouter([
     {
@@ -29,6 +30,10 @@ const routes = createBrowserRouter([
                 path: '/login',
                 element: <LoginForm />,
             },
+            {
+                path: '/dictionary',
+                element: <Dictionary />,
+            }
         ]
     }
 ],
