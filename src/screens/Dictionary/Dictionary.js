@@ -71,7 +71,12 @@ const Dictionary = () => {
     return (
         <div className="dictionary-container">
             <h1>DICTIONARY USIP</h1>
-            <p>Este módulo (diccionario) corresponde al recuperatorio del módulo-7 ReactJS URL:<a href="https://EfraStm.github.io/front_react_diplomado">https://EfraStm.github.io/front_react_diplomado</a>
+            <p>
+                Este módulo (diccionario) corresponde al recuperatorio del módulo-7 ReactJS. URL:
+                <a href="https://EfraStm.github.io/front_react_diplomado"
+                   style="color: #007bff; text-decoration: underline;">
+                    https://EfraStm.github.io/front_react_diplomado
+                </a>
             </p>
             <div className="dictionary-buttons">
                 <button onClick={() => setShowAddModal(true)}>Agregar Palabra</button>
@@ -93,19 +98,19 @@ const Dictionary = () => {
                     type="text"
                     placeholder="Español"
                     value={newWord.es}
-                    onChange={e => setNewWord({ ...newWord, es: e.target.value })}
+                    onChange={e => setNewWord({...newWord, es: e.target.value})}
                 />
                 <input
                     type="text"
                     placeholder="Inglés"
                     value={newWord.en}
-                    onChange={e => setNewWord({ ...newWord, en: e.target.value })}
+                    onChange={e => setNewWord({...newWord, en: e.target.value})}
                 />
                 <input
                     type="text"
                     placeholder="Portugués"
                     value={newWord.pt}
-                    onChange={e => setNewWord({ ...newWord, pt: e.target.value })}
+                    onChange={e => setNewWord({...newWord, pt: e.target.value})}
                 />
             </ModalInfo>
 
@@ -163,7 +168,7 @@ const Dictionary = () => {
                 </select>
 
                 {/* Muestra el resultado de la traducción */}
-                {translatedWord && <textarea readOnly value={translatedWord} />}
+                {translatedWord && <textarea readOnly value={translatedWord}/>}
             </ModalInfo>
         </div>
     );
