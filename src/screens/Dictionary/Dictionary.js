@@ -73,7 +73,7 @@ const Dictionary = () => {
             <h1>DICTIONARY USIP</h1>
             <p>
                 Este módulo (diccionario) corresponde al recuperatorio del módulo-7 ReactJS. URL:
-                <a href="https://EfraStm.github.io/front_react_diplomado">
+                <a href="https://EfraStm.github.io/front_react_diplomado" className="stlss">
                     https://EfraStm.github.io/front_react_diplomado
                 </a>
             </p>
