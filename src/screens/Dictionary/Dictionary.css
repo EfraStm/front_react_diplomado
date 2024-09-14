@@ -52,3 +52,12 @@ input {
     justify-content: center;
     align-items: center;
 }
+a.stlss {
+    color: #007bff;
+    text-decoration: underline;
+}
+
+a.stlss:hover {
+    color: #0056b3;
+    text-decoration: none;
+}
