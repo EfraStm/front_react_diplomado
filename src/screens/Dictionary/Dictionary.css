@@ -56,8 +56,3 @@ input {
     color: #007bff; /* Azul para enlaces */
     text-decoration: underline; /* Subrayar los enlaces */
 }
-
-.stlss:hover {
-    color: #0056b3; /* Color más oscuro en hover */
-    text-decoration: none; /* Opcional, elimina el subrayado en hover */
-}
