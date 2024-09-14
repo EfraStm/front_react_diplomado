@@ -53,11 +53,11 @@ input {
     align-items: center;
 }
 a.stlss {
-    color: #007bff;
+    color: #000000;
     text-decoration: underline;
 }
 
 a.stlss:hover {
-    color: #0056b3;
+    color: #333333;
     text-decoration: none;
 }
